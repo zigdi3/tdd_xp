@@ -11,12 +11,12 @@ describe("Authentication", () => {
     });
     expect(user.email).toBe("diego.ie.araujo@gmail.com");
   });
-  it("Should receive a JWT token when insert valid credentials", async () => {
-    const response = await request(app).post("/sessions").send({
-      email: user.email,
-      password: "123456",
-    });
+  // it("Should receive a JWT token when insert valid credentials", async () => {
+  //   const response = await request(app).post("/sessions").send({
+  //     email: user.email,
+  //     password: "123456",
+  //   });
 
-    expect(response.status).toBe(200);
-  });
+  //   expect(response.status).toBe(200);
+  // });
 });
